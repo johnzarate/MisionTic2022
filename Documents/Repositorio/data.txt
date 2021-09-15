@@ -2,3 +2,4 @@ Nombre Proyecto: Thunder Devs
 Nombre: Jhon Alejandro Berrio Gallego
 Cédula: 1036606828
 Cualidades: Conocimientos en HTML y CSS. Conocimioentos básicos en JavaScript
+Diana Carolina Bernal Montenegro
