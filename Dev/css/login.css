@@ -8,19 +8,29 @@ html{
 
 h1{
     text-align: center;
+    position: absolute;
+    width  : 600px;
+    height: 160px;
+    top: 40%;
+    margin-top: -80px;
+    left: 50%;
+    margin-left: -300px;
 }
 
 .formularioLogin{
     border: rgb(16, 34, 2) 2.5px solid;
     border-radius: 6px;
-    position: relative;
+    position: absolute;
     width  : 400px;
-    max-width: 100%;
-    margin : auto;
-    margin-top: 30px;
+    height: 160px;
+    top: 50%;
+    margin-top: -80px;
+    left: 50%;
+    margin-left: -200px;
     padding: 10px;
-    box-shadow: 7px 12px 37px #000;
+    box-shadow: 7px 12px 37px #000;   
 }
+
 .datos{
     border: rgb(16, 34, 2) 1px solid;
     border-radius: 4px; 
