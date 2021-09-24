@@ -1,0 +1,178 @@
+<DOCTYPE html>  
+<html>  
+    <head>  
+        <meta charset="utf-8"/>  
+        <title>Actualizar Usuario</title>  
+        <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+        <link rel="stylesheet" type="text/css" href="../css/menuHorizontal.css">
+        <link rel="stylesheet" type="text/css" href="../css/menuVertical.css">
+        <link rel="shortcut icon" href="ico/logo.png">
+        
+        <STYLE>
+        .table2{
+    border-collapse: collapse;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.table2,td{
+    padding: 1px;     background: #e8edff;     border-bottom: 1px solid #fff;
+    color: #669;    border-top: 1px solid transparent; 
+}
+.table2,tr{
+    background: #d0dafd; color: #339; 
+}
+.scrollbar{
+width:90%;
+background-color:#fff;
+overflow-x:scroll;
+float:none;
+padding: 10px;
+border: 1px solid #c5c5c5;
+}
+#css_version::-webkit-scrollbar {
+    width: 11px;
+}
+#css_version::-webkit-scrollbar-thumb {
+    border-radius: 11px;
+    background: rgba(28,114,150,0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+        </style>        
+    </head> 
+
+
+    <body>  
+        
+        
+                <ul class="nav-u">
+                            <li><a href="admin.php">Inicio</a></li>
+                                <li><a href="ventas.html">Ventas</a></li>
+                                <li><a href="cerrarSesion.php">Salir</a></li>
+			</ul>
+		
+        
+<header><div><ul><li>.</li><li>.</li><li>.</li></ul></div></header>
+    
+        
+        
+            <SECTION id="contenido">
+                <br><br>
+                <h2>Gestion de Usuarios</h2>
+                <br><br>
+              <div align=center>
+
+            
+                <form name="form" method="post" action="">
+                    <TR>                    
+                    <TABLE>
+	<TD>    
+            No de Documento:</TD>
+	<TD>
+            <input type="text" name="ID_docente" autocomplete="off" onkeypress="return valida(event)">
+	</TD>
+        
+        <TD>
+	<INPUT type="submit" value="Consultar" name="Consultar">
+	</TD>
+</TR>
+                  
+                    </table>
+                    <TABLE align="center" id="table">
+                             
+             <TR>
+	<TD>N&uacute;mero de documento</TD>
+	<TD>
+            <input type="text" read_only="read_only" name="NoDocumento" value=" " autocomplete="off">
+	</TD>
+        
+             </TR>
+                
+<TR>
+	<TD>Nombres</TD>
+	<TD>
+            <input type="text" name="Nombres" autocomplete="off" value=" ">
+	</TD>
+        <TD>Apellidos</TD>
+	<TD>
+            <INPUT type=text name="Apellidos" autocomplete="off" value=" ">
+	</TD>
+<br>
+</TR>
+        
+        <TR>
+	<TD>Rol</TD>
+	<TD>
+            <INPUT type=text name="rol" autocomplete="off" value=" ">
+	</TD>
+        <TD>Direcci&oacute;n</TD>
+	<TD>
+            <INPUT type=text name="direccion" autocomplete="off" value=" ">
+	</TD>
+        <br>
+</TR>
+
+<TR>
+	<TD>Tel. Fijo</TD>
+	<TD>
+            <INPUT type=text name="TelFijo" autocomplete="off" value=" ">
+	</TD>
+        <TD>Tel. M&oacute;vil</TD>
+	<TD>
+            <INPUT type=text name="TelMovil" autocomplete="off" value=" ">
+	</TD>
+<br>
+</TR>
+
+<TR>
+	<TD>Correo electr&oacute;nico</TD>
+	<TD>
+            <INPUT type=text name="Correo" autocomplete="off" value=" ">
+	</TD>
+        <TD>G&eacute;nero</TD>
+	<TD>        
+        <INPUT type=text name="Genero" autocomplete="off" value=" ">        
+	</TD>
+<br>
+</TR>
+        
+<TR>
+	<TD>Usuario</TD>
+	<TD>
+            <INPUT type=text name="Usuario" autocomplete="off" value=" ">
+	</TD>
+        <TD>Contrase&ntilde;a</TD>
+	<TD>
+            <INPUT type=password name="Contrasena" autocomplete="off" value="">
+	</TD>
+<br>
+</TR>
+   <TR>
+	<TD>
+	<INPUT type="submit" value="Actualizar" name="actualizar">
+	</TD>
+        <TD>
+	
+	</TD>
+        
+</TR>
+
+              
+ 
+</TABLE>
+                </FORM>                  
+              </div>
+                    
+                      
+            </SECTION>
+            <aside> 
+                
+            </aside>
+            
+            <footer>
+                <h2>Contactenos</h2>  
+                <p> johnzarate1024@gmail.com<p>
+            </footer>
+
+    </body>  
+</HTML>

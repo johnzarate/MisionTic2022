@@ -1,0 +1,73 @@
+* {
+	margin:0px;
+	padding:0px;
+   }
+                       
+                        body{
+                            background: #fff;
+                            color: #000;
+                        }
+                        
+  header{
+  background: #2175bc;
+  color: #2175bc;
+  width: 100%;
+  }
+  #contenido{
+                            width: 85%;   
+                            
+                            float: right;                           
+                            text-align: center;
+                            
+	                    margin: 0px;
+	                    
+                        }
+                        #contenido td{
+                         font-size: 20px;   
+                        }                                              
+                        aside{
+                            width: 13%;
+                            height: 504px;
+                            text-align: center;
+                            border:  1px solid blue;
+                            margin-top: 10px;
+                            float: left;
+                            margin: 0px;
+                            
+                        }
+                         aside2{
+                            width: 13%;
+                            height: 850px;
+                            text-align: center;
+                            border:  1px solid blue;
+                            margin-top: 10px;
+                            float: left;
+                            margin: 0px;
+                            
+                        }
+                       
+                        footer{
+                            clear:both;
+                            text-align: center;
+                            height: 60px;
+                            width: 98.4%;
+                            border:  1px solid blue;
+                            padding: 10px;
+                            float:right;
+                        }
+                        
+
+
+.caja {
+
+  border: PowderBlue 5px solid;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+            
+}
+.caja1,.caja2,.caja3 {
+
+  border: PowderBlue 5px solid;
+  border-top-left-radius: 5px;
+            
+}
