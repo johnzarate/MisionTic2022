@@ -1,0 +1,11 @@
+{
+  "name": "back-thunder-devs",
+  "version": "1.0.0",
+  "description": "Back-end with API REST and connection with cloud firestore",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thunder Devs",
+  "license": "MIT"
+}
