@@ -1,11 +1,22 @@
-import './App.css';
-import LandingPage from './components/LandingPage';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import React from 'react';
+import PublicLayout from 'layouts/PublicLayout';
+import HomePage from 'pages/HomePage';
+import AuthLogInLayout from 'layouts/AuthLogInLayout';
 
 function App() {
   return (
-      <>
-        <LandingPage/>     
-      </>
+      <Router>
+        <Route exact path="/">
+          <PublicLayout>
+            <HomePage/>
+          </PublicLayout>
+        </Route>
+          <Route exact path="/auth">
+          <AuthLogInLayout>
+          </AuthLogInLayout>
+        </Route>
+      </Router>
   );
 }
 
