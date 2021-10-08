@@ -1,7 +1,6 @@
 import React from 'react';
 import Logo from "media/white_logo.png";
 import 'styles/homeStyles.css';
-import { NavLink } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
 
 const HomeNav = () => {
@@ -11,7 +10,7 @@ const HomeNav = () => {
             <img src={Logo} alt="Hello" className="w-24 ml-5 mt-3 mb-1" />
             <nav className="navHomeFont">
                 <ul className="flex justify-between items-center mt-3">
-                    <li className="m-3 hover:scale-110">
+                    <li className="m-3 ">
                         <button>Home</button>
                     </li>
                     <li className="m-3">
