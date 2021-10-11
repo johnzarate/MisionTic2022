@@ -8,6 +8,7 @@ const useActiveRoute = (route) => {
   useEffect(() => {
     //here search if the location includes some part of route
     //without count / and whitespaces, hence it's functional
+    //because his use is for routes that begins with /admin/
     if (location.pathname.includes(route.split("/")[1])) {
       setIsActive(true);
     } else {
