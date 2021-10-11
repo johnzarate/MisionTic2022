@@ -5,9 +5,9 @@ import 'styles/homeStyles.css'
 
 const PublicLayout = ({ children }) => {
     return (
-        <div className="h-screen w-screen flex flex-col">
+        <div className="h-screen flex flex-col">
             <HomeNav/>
-            <main className="flex h-full bgMain items-center">
+            <main className="flex flex-col h-full  bgMain items-center justify-center lg:flex-row">
                 {children}
             </main>
             <HomeFooter/>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.js"],"names":["app","listen","get","console","log"],"mappings":";;AAAA;;;;AAEAA,aAAIC,MAAJ,CAAWD,aAAIE,GAAJ,CAAQ,MAAR,CAAX,EAA4B,MAAI;AAC5BC,EAAAA,OAAO,CAACC,GAAR,CAAY,qBAAZ;AACH,CAFD","sourcesContent":["import app from './app';\n\napp.listen(app.get('port'), ()=>{\n    console.log(\"Server on port 5000\");\n});\n"],"file":"index.js"}
