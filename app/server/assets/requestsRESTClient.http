@@ -1,12 +1,27 @@
 ### obteniendo todos los productos
-GET http://localhost:6059/api/v1/products
+GET http://localhost:7013/api/v1/products
 
-### modificando un producto
-POST http://localhost:6059/api/v1/products/ 
+### creando un producto
+POST http://localhost:6059/api/v1/products/create-product 
 Content-Type: application/json
 
 {
-
+    "idProduct":"GDDshKffaaaffD-202",
+    "description":"Yuff",
+    "unitPrice":12450.1,
+    "status": false
 }
+
+### modificando un producto
+PATCH http://localhost:7027/api/v1/products/update-product/6165da684d93432d937afa43 
+Content-Type: application/json
+
+{
+    "description":"Violet & Finch"
+}
+
+### borrando un producto 
+DELETE http://localhost:6089/api/v1/products/delete/6165da684d93432d937afa41
+
 
 ### link ciclo 3: http://ingeniaudea.edu.co/zoom-recordings/recordings/docenciaingenia111@udea.edu.co/99562013521/2021-02-28 

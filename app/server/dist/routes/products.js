@@ -7,35 +7,67 @@ exports.default = void 0;
 
 var _express = require("express");
 
-var _authfirebase = _interopRequireDefault(require("../services/authfirebase"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _mongodb = require("mongodb");
 
 const router = (0, _express.Router)();
-router.get('/', (req, res) => {
-  console.log("route /");
+router.route("/").get(async (req, res) => {
+  //if there is going wrong try/catch handle it
+  try {
+    await dbConnection.collection("users").find({}).toArray((err, result) => {
+      if (err) throw err;
+      result.forEach(element => {
+        console.log(element._id);
+      });
+    });
+  } catch (error) {
+    console.log("Error get request in products", error);
+  } finally {}
+
   res.send({
-    "home": "You're in home"
+    msg: "Get request successfully"
   });
 });
-router.post('/create-product', async (req, res) => {
+router.post("/create-product", async (req, res) => {
   console.log(req.body);
   const newProduct = {
     name: req.body.name,
     price: req.body.price
   };
-  const yu = await _authfirebase.default.collection("sales").add(newProduct);
+  const yu = await db.collection("sales").add(newProduct);
   console.log(yu);
   res.send({
     name: "Hola Mundo"
   });
 });
-router.delete('/delete/:id', async (req, res) => {
-  console.log(req.params.id);
-  const resd = await _authfirebase.default.collection('sales').doc(req.params.id).delete();
+router.patch("/update-product", (req, res) => {
+  client.connect(err => {
+    const collection = client.db("thunder-db").collection("users"); // perform actions on the collection object
+
+    console.log(req.body);
+    collection.updateOne({
+      idProduct: req.body.id
+    }, {
+      $set: {
+        unitPrice: req.body.price,
+        status: req.body.status
+      }
+    }, function (err, reds) {
+      if (err) throw err;
+      console.log("1 document updated", reds);
+      client.close();
+    });
+  });
+  client.close();
   res.send({
-    "mgs": "Deleted",
-    "rd": resd
+    msg: "Updated"
+  });
+});
+router.delete("/delete/:id", async (req, res) => {
+  console.log(req.params.id);
+  const resd = await db.collection("sales").doc(req.params.id).delete();
+  res.send({
+    mgs: "Deleted",
+    rd: resd
   });
 });
 var _default = router;

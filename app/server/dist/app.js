@@ -9,14 +9,12 @@ var _express = _interopRequireDefault(require("express"));
 
 var _morgan = _interopRequireDefault(require("morgan"));
 
-var _home = _interopRequireDefault(require("./routes/home"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const app = (0, _express.default)();
 app.use(_express.default.json()); //settings
 
-const port = 6059;
+const port = 7013;
 app.set("port", port); //middlewares
 
 app.use((0, _morgan.default)('dev'));
@@ -24,8 +22,7 @@ app.use(_express.default.urlencoded({
   extended: false
 })); //routes
 
-app.use(_home.default);
-app.use('/products', require('./routes/products').default);
+app.use('/api/v1/products', require('./routes/products/products').default);
 var _default = app;
 exports.default = _default;
 //# sourceMappingURL=app.js.map
