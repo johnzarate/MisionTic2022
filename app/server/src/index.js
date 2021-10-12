@@ -1,5 +1,6 @@
 import app from './app';
 
-app.listen(app.get('port'), ()=>{
-    console.log("Server on port 5000");
+const listener = app.listen(app.get('port'), ()=>{
+    console.log(`Server on port ${listener.address().port}`);
 });
+  

@@ -1,0 +1,12 @@
+### obteniendo todos los productos
+GET http://localhost:6059/api/v1/products
+
+### modificando un producto
+POST http://localhost:6059/api/v1/products/ 
+Content-Type: application/json
+
+{
+
+}
+
+### link ciclo 3: http://ingeniaudea.edu.co/zoom-recordings/recordings/docenciaingenia111@udea.edu.co/99562013521/2021-02-28 

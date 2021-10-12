@@ -10,7 +10,7 @@
 
 # production
 /build
-thunderdevs-firebase-sdk.json
+/assets/requestRESTClient.http
 
 # misc
 .env
