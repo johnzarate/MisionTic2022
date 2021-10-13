@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AuthLogInLayout = () => {
+const OptionSideBarResponsive = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const AuthLogInLayout = () => {
     )
 }
 
-export default AuthLogInLayout
+export default OptionSideBarResponsive
