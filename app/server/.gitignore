@@ -7,10 +7,10 @@
 
 # testing
 /coverage
+/assets
 
 # production
 /build
-/assets/requestRESTClient.http
 
 # misc
 .env

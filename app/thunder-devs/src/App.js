@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import PublicLayout from "layouts/HomeLayout";
+import PublicLayout from "layouts/PublicLayout";
 import HomePage from "pages/HomePage";
 import AdminLayout from "layouts/AdminLayout";
 import ProductsPage from "pages/admin/ProductsPage";
@@ -9,6 +9,7 @@ import EditProductPage from "pages/admin/EditProductPage";
 import CreateProductPage from "pages/admin/CreateProductPage";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
+import NotFoundPage from "pages/NotFoundPage";
 
 function App() {
   const [productToEdit, setProductToEdit] = useState(null);
@@ -18,9 +19,10 @@ function App() {
 
   return (
     <Router>
+      <Switch>
       <Route exact path="/">
         <PublicLayout>
-          <HomePage />
+            <HomePage/>          
         </PublicLayout>
       </Route>
       <Route
@@ -52,6 +54,12 @@ function App() {
           </ProductToEditContext.Provider>
         </AdminLayout>
       </Route>
+      <Route exact path="*">
+        <PublicLayout>
+          <NotFoundPage/>
+        </PublicLayout>
+      </Route>
+      </Switch>
       <ToastContainer
         position="bottom-right"
         autoClose={2000}

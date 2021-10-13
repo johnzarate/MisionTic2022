@@ -4,7 +4,7 @@ import { ObjectId } from "mongodb";
 const queryAllProducts = async (callback) => {
   await connectionDB
     .getDBInstance()
-    .collection("users")
+    .collection("products")
     .find({})
     .toArray(callback);
 };
@@ -13,12 +13,12 @@ const validId = async (idProduct) => {
   const bd_temp = [];
     await connectionDB
       .getDBInstance()
-      .collection("users")
+      .collection("products")
       .find({})
       .forEach((doc) => {
         bd_temp.push(doc.idProduct);
       });
- 
+    console.log(bd_temp);
     const exists = bd_temp.includes(idProduct);
     return exists;
 }
@@ -27,12 +27,12 @@ const createNewProduct = async (newData, callback) => {
     const newProduct = {
       idProduct: newData.idProduct,
       description: newData.description,
-      price: newData.unitPrice,
+      unitPrice: newData.unitPrice,
       status: Boolean(newData.status),
     };
     await connectionDB
       .getDBInstance()
-      .collection("users")
+      .collection("products")
       .insertOne(newProduct, callback);
 };
 
@@ -40,9 +40,9 @@ const createNewProduct = async (newData, callback) => {
 const updateProduct = async (idToUpdate, updatedData, callback) => {
   await connectionDB
     .getDBInstance()
-    .collection("users")
+    .collection("products")
     .updateOne(
-      { _id: new ObjectId(idToUpdate) },
+      { idProduct: idToUpdate },
       { $set: updatedData },
       { returnOriginal: true },
       callback
@@ -52,7 +52,7 @@ const updateProduct = async (idToUpdate, updatedData, callback) => {
 const deleteProduct = async (idToDelete, callback) => {
   await connectionDB
     .getDBInstance()
-    .collection("users")
+    .collection("products")
     .deleteOne({ _id: new ObjectId(idToDelete) }, callback);
 };
 export { queryAllProducts, createNewProduct, updateProduct, deleteProduct, validId };

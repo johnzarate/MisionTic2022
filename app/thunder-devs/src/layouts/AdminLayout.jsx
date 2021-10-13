@@ -7,7 +7,7 @@ const AdminLayout = ({ children }) => {
         <div className="flex w-screen h-screen flex-col lg:flex-row ">
             <AdminSideBarResponsive/>
             <AdminSideBar/>
-            <main className="flex h-full w-full overflow-y-scroll bg-gray-400">
+            <main className="flex h-full w-full overflow-y-scroll bg-gray-100">
                 { children }
             </main>
         </div>

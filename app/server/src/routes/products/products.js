@@ -67,7 +67,7 @@ router.delete("/delete/:idProduct", (req, res) => {
 
     existsPromise.then((isFound) => {
       if (isFound) {
-        deleteProduct(req.params.id, callbackResponse(res));
+        deleteProduct(req.params.idProduct, callbackResponse(res));
       } else {
         console.log("id not found");
         res.sendStatus(400);

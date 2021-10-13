@@ -9,7 +9,7 @@ const useActiveRoute = (route) => {
     //here search if the location includes some part of route
     //without count / and whitespaces, hence it's functional
     //because his use is for routes that begins with /admin/
-    if (location.pathname.includes(route.split("/")[1])) {
+    if (location.pathname.includes(route.split("/")[2])) {
       setIsActive(true);
     } else {
       setIsActive(false);

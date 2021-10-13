@@ -17,13 +17,13 @@ const AdminSideBar = () => {
 
                 <OptionSideBar icon="point_of_sale" route="/admin" label="Sales" />
 
-                <OptionSideBar icon="inventory_2" route="/admnin/products" label="Products" />
+                <OptionSideBar icon="inventory_2" route="/admin/products" label="Products" />
 
                 <OptionSideBar icon="people" route="/dd" label="Users" />
 
                 <OptionSideBar icon="account_circle" route="/dd" label="Profile" />
 
-                <OptionSideBar icon="account_circle" route="/dd" label="Profile" mod="bottom-0"/>
+                <OptionSideBar icon="account_circle" route="/" label="Profile" mod="bottom-0"/>
 
             </div>
 

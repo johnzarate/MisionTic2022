@@ -1,6 +1,8 @@
 import React from 'react'
 
 const HomePage = () => {
+    document.title = "Thunder Devs App";
+
     return (
         <>
         <section className="ml-10 py-5 lg:py-1">
