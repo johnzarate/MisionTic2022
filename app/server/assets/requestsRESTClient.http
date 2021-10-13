@@ -1,0 +1,28 @@
+@port = 4304
+### obteniendo todos los productos
+GET http://localhost:{{port}}/api/v1/products
+
+### creando un producto
+POST http://localhost:{{port}}/api/v1/products/create-product 
+Content-Type: application/json
+
+{
+    "idProduct":"GDDLPA",
+    "description":"Red Redemption 2",
+    "unitPrice":230000.2,
+    "status": false
+}
+
+### modificando un producto
+PATCH http://localhost:{{port}}/api/v1/products/update-product/6165dc56f79eabdc088bfc53
+Content-Type: application/json
+
+{
+    "description":"Violet & Finch"
+}
+
+### borrando un producto 
+DELETE http://localhost{{port}}/api/v1/products/delete/6165da684d93432d937afa41
+
+
+### link ciclo 3: http://ingeniaudea.edu.co/zoom-recordings/recordings/docenciaingenia111@udea.edu.co/99562013521/2021-02-28 
