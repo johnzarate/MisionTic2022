@@ -38,6 +38,7 @@ const ProductsPage = () => {
         }
         //here don't put listProducts, because setListProducts change it when useEffect is called, so that will generate an infinite loop
         //this is a possible refactoring code
+        // eslint-disable-next-line
     }, [search])
 
     return (
@@ -57,7 +58,7 @@ const ProductsPage = () => {
             </form>
             <ul className="flex flex-col md:flex-row lg:flex-row flex-wrap p-4 justify-center">
                 {
-                    listProducts.length != 0 ? 
+                    listProducts.length !== 0 ? 
                     (listProducts.map((product) => {
                         return (
                             <ProductCard product={product} executeEffectDependency={setMakeARequest} make={makeARequest} key={nanoid()} />
