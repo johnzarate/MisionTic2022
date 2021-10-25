@@ -10,6 +10,7 @@ import CreateProductPage from "pages/admin/CreateProductPage";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import NotFoundPage from "pages/NotFoundPage";
+import Users from "pages/Users";
 
 function App() {
   const [productToEdit, setProductToEdit] = useState(null);
@@ -32,7 +33,8 @@ function App() {
           "/admin/profile",
           "/admin/products",
           "/admin/products/edit",
-          "/admin/products/create"
+          "/admin/products/create",
+          "/admin/users"
         ]}
       >
         <AdminLayout>
@@ -50,6 +52,9 @@ function App() {
             </Route>
             <Route exact path="/admin/products/create">
               <CreateProductPage />
+            </Route>
+            <Route exact path="/admin/Users">
+              <Users />
             </Route>
           </ProductToEditContext.Provider>
         </AdminLayout>
