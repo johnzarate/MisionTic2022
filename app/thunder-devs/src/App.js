@@ -10,7 +10,9 @@ import CreateProductPage from "pages/admin/CreateProductPage";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import NotFoundPage from "pages/NotFoundPage";
-
+import FormularioVentas from "components/FormularioVentas";
+import VentasRegistro from "components/VentasRegistro";
+import VentasEditable from "components/Formularioeditable";
 function App() {
   const [productToEdit, setProductToEdit] = useState(null);
   useEffect(() => {
@@ -32,7 +34,10 @@ function App() {
           "/admin/profile",
           "/admin/products",
           "/admin/products/edit",
-          "/admin/products/create"
+          "/admin/products/create",
+          "/admin/ventastabla",
+          "/admin/ventasregistro",
+          "/admin/ventaseditable"
         ]}
       >
         <AdminLayout>
@@ -52,6 +57,15 @@ function App() {
               <CreateProductPage />
             </Route>
           </ProductToEditContext.Provider>
+            <Route exact path="/admin/ventastabla">
+              <FormularioVentas />
+            </Route>
+            <Route exact path="/admin/ventasregistro">
+              <VentasRegistro />
+            </Route> 
+            <Route exact path="/admin/ventaseditable">
+              <VentasEditable />
+            </Route>
         </AdminLayout>
       </Route>
       <Route exact path="*">
