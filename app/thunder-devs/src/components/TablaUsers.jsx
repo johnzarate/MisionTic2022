@@ -1,5 +1,5 @@
 import React from 'react'
-function Users(){
+function TablaUsers(){
     return <div> 
 <div className="flex flex-col items-center">
   <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -132,4 +132,4 @@ function Users(){
     </div>;
 }
 
-export default Users;
+export default TablaUsers;
