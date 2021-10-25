@@ -4,10 +4,10 @@ import React from 'react'
 
 const AdminLayout = ({ children }) => {
     return (
-        <div className="flex w-screen h-screen flex-col lg:flex-row ">
+        <div className="flex w-screen h-screen flex-col lg:flex-row">
             <AdminSideBarResponsive/>
             <AdminSideBar/>
-            <main className="flex h-full w-full overflow-y-scroll bg-gray-100">
+            <main className="flex h-full w-full overflow-y-scroll bg-gray-100 justify-center items-center">
                 { children }
             </main>
         </div>
