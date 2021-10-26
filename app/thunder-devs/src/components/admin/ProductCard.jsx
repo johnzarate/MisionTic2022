@@ -11,7 +11,7 @@ const ProductCard = ({ product, executeEffectDependency, make}) => {
 
     const deleteProductR = () => {
 
-      deleteProduct(product._id, (response) => {
+      deleteProduct(product.idProduct, (response) => {
         console.log(response);
         toast.success("Delete Success");
         executeEffectDependency(!make);

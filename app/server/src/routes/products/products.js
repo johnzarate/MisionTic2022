@@ -72,7 +72,7 @@ router.delete("/delete/:idProduct", (req, res) => {
         console.log("id not found");
         res.sendStatus(400);
       }
-    });
+    }); 
   } catch (error) {
     console.log("Error delete request in products");
     res.sendStatus(500);

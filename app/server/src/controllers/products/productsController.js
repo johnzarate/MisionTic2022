@@ -53,6 +53,7 @@ const deleteProduct = async (idToDelete, callback) => {
   await connectionDB
     .getDBInstance()
     .collection("products")
-    .deleteOne({ _id: new ObjectId(idToDelete) }, callback);
+    .deleteOne({ idProduct: idToDelete }, callback);
 };
 export { queryAllProducts, createNewProduct, updateProduct, deleteProduct, validId };
+ 

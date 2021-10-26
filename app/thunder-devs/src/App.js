@@ -10,6 +10,7 @@ import CreateProductPage from "pages/admin/CreateProductPage";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import NotFoundPage from "pages/NotFoundPage";
+import { Auth0Provider } from '@auth0/auth0-react';
 
 function App() {
   const [productToEdit, setProductToEdit] = useState(null);
@@ -18,6 +19,11 @@ function App() {
   }, [productToEdit]);
 
   return (
+    <Auth0Provider
+        domain="dev-w8mlenzq.us.auth0.com"
+        clientId="Xs8RGslfjoUAmaOnhZ9Oi9vLyMi1J9r2"
+        redirectUri={window.location.origin}
+    >
     <Router>
       <Switch>
       <Route exact path="/">
@@ -72,6 +78,7 @@ function App() {
         pauseOnHover={false}
       />
     </Router>
+    </Auth0Provider>
   );
 }
 
