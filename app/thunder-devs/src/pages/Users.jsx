@@ -14,13 +14,6 @@ const Users = () => {
                 <input type="text" name="search" className="rounded-md focus:border-dashed focues:bg-green-100 shadow-green-200 p-3 mx-7 w-72" onInput={(e) => {
 
                 }} placeholder="Search by id or name"/>
-                <Tooltip arrow placement="right-start" title="Crear Nuevo Usuario">
-                    <Link to="/admin/products/create">
-                        <button className="bg-green-400 w-12 h-12 rounded-full flex items-center justify-center"><span className="material-icons">
-                            add_circle
-                        </span></button>
-                    </Link>
-                </Tooltip>
             </form>
             <TablaUsers></TablaUsers>
         </section>
