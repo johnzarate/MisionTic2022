@@ -49,12 +49,12 @@
     align-content: center;
     width: 30%;
     background: #fdfffe;
-    border: none;
-    padding: 8px;
+    border: 2px;
+    padding: 4px;
     color: rgb(0, 0, 0);
-    margin: 6px 0;
+    margin: 6px 3px;
     font-size: 16px;
-    
+     
   }
 
   

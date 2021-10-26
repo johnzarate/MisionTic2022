@@ -15,10 +15,10 @@ return (
             <section class="main__form--container">
                 <table>
                     <thead>
-                        <th>ID Vendedor</th> <th>Nombre del Vendedor</th> <th>Fecha de venta</th> <th>ID comprador</th> <th>Nombre del comprador</th> <th>No. de venta</th> <th>Código producto</th><th>Nombre producto</th><th>Cantidad</th><th>Precio unidad</th><th>Total</th>
+                        <th>ID vendedor</th> <th>Nombre vendedor</th> <th>Fecha venta</th> <th>ID cliente</th> <th>Nombre cliente</th> <th>No. venta</th> <th>Código producto</th><th>Nombre producto</th><th>Cantidad</th><th>Precio unidad</th><th>Total</th> 
                     </thead>
                     <tr>
-                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><button>Ver venta</button></td>
                     </tr>
                     <tr>
                         <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
