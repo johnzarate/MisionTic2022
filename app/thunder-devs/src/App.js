@@ -10,14 +10,11 @@ import CreateProductPage from "pages/admin/CreateProductPage";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import NotFoundPage from "pages/NotFoundPage";
-<<<<<<< HEAD
 import Users from "pages/Users";
 
-=======
 import FormularioVentas from "components/FormularioVentas";
 import VentasRegistro from "components/VentasRegistro";
 import VentasEditable from "components/Formularioeditable";
->>>>>>> origin
 function App() {
   const [productToEdit, setProductToEdit] = useState(null);
   useEffect(() => {
@@ -40,13 +37,10 @@ function App() {
           "/admin/products",
           "/admin/products/edit",
           "/admin/products/create",
-<<<<<<< HEAD
-          "/admin/users"
-=======
+          "/admin/users",
           "/admin/ventastabla",
           "/admin/ventasregistro",
           "/admin/ventaseditable"
->>>>>>> origin
         ]}
       >
         <AdminLayout>
