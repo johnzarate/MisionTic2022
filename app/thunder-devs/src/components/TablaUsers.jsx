@@ -21,9 +21,6 @@ function TablaUsers(){
                 Rol
               </th>
               <th scope="col" className="relative px-6 py-3">
-                <span className="sr-only">Edit</span>
-              </th>
-              <th scope="col" className="relative px-6 py-3">
                 <span className="sr-only">Eliminar</span>
               </th>
             </tr>
@@ -51,9 +48,6 @@ function TablaUsers(){
               </td>
               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                 Admin
-              </td>
-              <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                <a href="#" className="text-indigo-600 hover:text-indigo-900">Editar</a>
               </td>
               <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                 <a href="#" className="text-indigo-600 hover:text-indigo-900">Eliminar</a>
@@ -84,9 +78,6 @@ function TablaUsers(){
                 Vendedor
               </td>
               <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                <a href="#" className="text-indigo-600 hover:text-indigo-900">Editar</a>
-              </td>
-              <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                 <a href="#" className="text-indigo-600 hover:text-indigo-900">Eliminar</a>
               </td>
             </tr>
@@ -113,9 +104,6 @@ function TablaUsers(){
               </td>
               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                 Admin
-              </td>
-              <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                <a href="#" className="text-indigo-600 hover:text-indigo-900">Editar</a>
               </td>
               <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                 <a href="#" className="text-indigo-600 hover:text-indigo-900">Eliminar</a>
