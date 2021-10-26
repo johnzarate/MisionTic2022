@@ -11,6 +11,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import NotFoundPage from "pages/NotFoundPage";
 import Users from "pages/Users";
+import PrivateRoute from "components/PrivateRoute";
+import { Auth0Provider } from '@auth0/auth0-react';
 
 function App() {
   const [productToEdit, setProductToEdit] = useState(null);
@@ -19,7 +21,11 @@ function App() {
   }, [productToEdit]);
 
   return (
-    <Router>
+    <Auth0Provider
+        domain="dev-w8mlenzq.us.auth0.com"
+        clientId="Xs8RGslfjoUAmaOnhZ9Oi9vLyMi1J9r2"
+        redirectUri={window.location.origin}>
+      <Router>
       <Switch>
       <Route exact path="/">
         <PublicLayout>
@@ -54,7 +60,9 @@ function App() {
               <CreateProductPage />
             </Route>
             <Route exact path="/admin/Users">
-              <Users />
+            <PrivateRoute>
+              <Users/>
+            </PrivateRoute>
             </Route>
           </ProductToEditContext.Provider>
         </AdminLayout>
@@ -77,6 +85,7 @@ function App() {
         pauseOnHover={false}
       />
     </Router>
+    </Auth0Provider>
   );
 }
 
