@@ -23,6 +23,7 @@ function App() {
         domain="dev-w8mlenzq.us.auth0.com"
         clientId="Xs8RGslfjoUAmaOnhZ9Oi9vLyMi1J9r2"
         redirectUri={window.location.origin}
+        audience="https://authtokenthunder/"
     >
     <Router>
       <Switch>
